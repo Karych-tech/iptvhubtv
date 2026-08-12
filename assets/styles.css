@@ -1415,7 +1415,7 @@ textarea {
 
   .sidebar {
     width: 100%;
-    height: auto;
+    height: 100px;
     position: fixed;
     inset: auto;
     z-index: 1000;
@@ -1423,7 +1423,6 @@ textarea {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 18px;
     border-right: 0;
     border-bottom: 1px solid var(--border);
     border-radius: 0 0 20px 20px;
