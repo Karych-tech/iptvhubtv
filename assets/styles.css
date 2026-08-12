@@ -260,11 +260,12 @@ textarea {
 .hero-media {
   border-radius: 24px;
   overflow: hidden;
-  min-height: 320px;
+  min-height: 200px;
 }
 
 .hero-media img {
   height: 100%;
+ 
 }
 
 .section {
@@ -1108,7 +1109,7 @@ textarea {
 
 .live-tv-slide img {
   width: 100px;
-  height: 56px;
+  height: 100px;
   object-fit: contain;
   padding: 10px 8px;
   border-radius: 16px;
@@ -1600,7 +1601,7 @@ textarea {
 
   .live-tv-slide img {
     width: 84px;
-    height: 48px;
+    height: 84px;
     padding: 8px 10px;
   }
 }
