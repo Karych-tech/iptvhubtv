@@ -1429,19 +1429,17 @@ textarea {
     border-radius: 0 0 20px 20px;
   }
 
-  .sidebar-card h3 {
-    font-size: 0.8rem;
-    margin-bottom:none;
+  .sidebar-card {
+    display: none;
   }
 
-  .sidebar-card p {
-    font-size: 0.7rem;
-  }
+
   main{
-    margin-top: 200px;
+    margin-top: 150px;
   }
 
   .nav-links {
+    /* This is the mobile dropdown, not the direct sidebar links */
     display: none;
     position: absolute;
     top: calc(100% + 10px);
