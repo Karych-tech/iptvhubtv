@@ -1,0 +1,6 @@
+# Allow all user agents to crawl the site
+User-agent: *
+Disallow:
+
+# Specify the location of the sitemap
+Sitemap: https://iptvhubtv.com/sitemap.xml
