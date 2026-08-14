@@ -153,8 +153,9 @@ textarea {
 .nav-links a {
   padding: 10px 14px;
   border-radius: 14px;
-  color: var(--muted);
+  color: var(--muted) ;
   transition: 0.25s ease;
+  font-weight: 500;
 }
 
 .nav-links a:hover,
@@ -1424,11 +1425,13 @@ textarea {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 10px 16px;
     border-right: 0;
     border-bottom: 1px solid var(--border);
-    border-radius: 0 0 20px 20px;
+    background: rgba(12, 12, 12, 0.96);
+    backdrop-filter: blur(16px);
   }
-
+  
   .sidebar-card {
     display: none;
   }
@@ -1436,30 +1439,32 @@ textarea {
 
   main{
     margin-top: 150px;
+    padding-top: 0;
   }
 
   .nav-links {
     /* This is the mobile dropdown, not the direct sidebar links */
     display: none;
     position: absolute;
-    top: calc(100% + 10px);
+    top: calc(100% + 12px);
     left: 16px;
     right: 16px;
     flex-direction: column;
     padding: 12px;
-    border-radius: 16px;
-    background: rgba(0, 0, 0, 0.96);
+    border-radius: 20px; /* background: oklab(0% 0 0 / 0.9); */
+    background: rgba(22, 22, 22, 0.96);
     border: 1px solid var(--border);
+    backdrop-filter: blur(12px);
     opacity: 0;
-    transform: translateY(-6px);
-    transition: opacity 0.25s ease, transform 0.25s ease;
+    transform: translateY(-10px) scale(0.98);
+    transition: opacity 0.3s ease, transform 0.3s ease;
     pointer-events: none;
   }
 
   .nav-links.show {
     display: flex;
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
     pointer-events: auto;
   }
 
@@ -1472,7 +1477,7 @@ textarea {
 
   .content {
     margin-left: 0;
-    padding-top: 110px;
+    padding-top: 100px;
   }
 
   .hero,
