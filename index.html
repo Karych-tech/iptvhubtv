@@ -38,157 +38,148 @@
   <link rel="manifest" href="favicon/site.webmanifest" />
 
   <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "IPTV Hub TV", 
-      "url": "https://iptvhubtv.com/",
-      "logo": "https://iptvhubtv.com/assets/img/logo.webp",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+212-717-613787",
-        "contactType": "Customer Support",
-        "email": "mohammedrechaki@gmail.com"
-      },
-      "sameAs": [
-        "https://wa.me/212717613787"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "IPTV Hub TV",
-      "url": "https://iptvhubtv.com/",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": { 
-          "@type": "EntryPoint",
-          "urlTemplate": "https://iptvhubtv.com/?s={search_term_string}"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://iptvhubtv.com/#organization",
+        "name": "IPTV Hub TV",
+        "url": "https://iptvhubtv.com/",
+        "logo": "https://iptvhubtv.com/assets/img/logo.webp",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+212-717-613787",
+          "contactType": "Customer Support",
+          "email": "mohammedrechaki@gmail.com"
         },
-        "query-input": "required name=search_term_string"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "1 Month IPTV Subscription",
-      "description": "A 1-month subscription to IPTV Hub TV, including over 20,000 live channels and 80,000+ movies & series in Full HD/4K.",
-      "image": "https://iptvhubtv.com/assets/img/hero.webp",
-      "sku": "IPTV-PLAN-1M",
-      "brand": {
-        "@type": "Brand",
-        "name": "IPTV Hub TV"
+        "sameAs": [
+          "https://wa.me/212717613787"
+        ],
+        "merchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "merchantReturnLink": "https://iptvhubtv.com/refund-policy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30
+        }
       },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://iptvhubtv.com#pricing",
-        "priceCurrency": "USD",
-        "price": "12.99",
-        "priceValidUntil": "2026-12-31",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "3 Months IPTV Subscription",
-      "description": "A 3-month subscription to IPTV Hub TV, offering better value with priority support and multi-device access.",
-      "image": "https://iptvhubtv.com/assets/img/hero.webp",
-      "sku": "IPTV-PLAN-3M",
-      "brand": {
-        "@type": "Brand",
-        "name": "IPTV Hub TV"
+      {
+        "@type": "WebSite",
+        "@id": "https://iptvhubtv.com/#website",
+        "url": "https://iptvhubtv.com/",
+        "name": "IPTV Hub TV",
+        "publisher": {
+          "@id": "https://iptvhubtv.com/#organization"
+        }
       },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://iptvhubtv.com#pricing",
-        "priceCurrency": "USD",
-        "price": "29.99",
-        "priceValidUntil": "2026-12-31",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "12 Months IPTV Subscription",
-      "description": "The best value 12-month subscription to IPTV Hub TV, with all features and premium support included.",
-      "image": "https://iptvhubtv.com/assets/img/hero.webp",
-      "sku": "IPTV-PLAN-12M",
-      "brand": {
-        "@type": "Brand",
-        "name": "IPTV Hub TV"
+      {
+        "@type": "Product",
+        "name": "1 Month IPTV Subscription",
+        "description": "A 1-month subscription to IPTV Hub TV, including over 20,000 live channels and 80,000+ movies & series in Full HD/4K.",
+        "image": "https://iptvhubtv.com/assets/img/hero.webp",
+        "sku": "IPTV-PLAN-1M",
+        "brand": {
+          "@id": "https://iptvhubtv.com/#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://iptvhubtv.com/#pricing",
+          "priceCurrency": "USD",
+          "price": "12.99",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock"
+        }
       },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://iptvhubtv.com#pricing",
-        "priceCurrency": "USD",
-        "price": "69.99",
-        "priceValidUntil": "2026-12-31",
-        "availability": "https://schema.org/InStock"
+      {
+        "@type": "Product",
+        "name": "3 Months IPTV Subscription",
+        "description": "A 3-month subscription to IPTV Hub TV, offering better value with priority support and multi-device access.",
+        "image": "https://iptvhubtv.com/assets/img/hero.webp",
+        "sku": "IPTV-PLAN-3M",
+        "brand": {
+          "@id": "https://iptvhubtv.com/#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://iptvhubtv.com/#pricing",
+          "priceCurrency": "USD",
+          "price": "29.99",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Product",
+        "name": "12 Months IPTV Subscription",
+        "description": "The best value 12-month subscription to IPTV Hub TV, with all features and premium support included.",
+        "image": "https://iptvhubtv.com/assets/img/hero.webp",
+        "sku": "IPTV-PLAN-12M",
+        "brand": {
+          "@id": "https://iptvhubtv.com/#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://iptvhubtv.com/#pricing",
+          "priceCurrency": "USD",
+          "price": "69.99",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Review",
+        "itemReviewed": {
+          "@id": "https://iptvhubtv.com/#organization"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Maya R."
+        },
+        "reviewBody": "Excellent streaming quality and crisp visuals make every night feel premium. The setup was simple and the playback stays smooth."
+      },
+      {
+        "@type": "Review",
+        "itemReviewed": {
+          "@id": "https://iptvhubtv.com/#organization"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Daniel K."
+        },
+        "reviewBody": "Easy installation and a clean interface made it one of the easiest subscriptions I have ever set up. The support team answered quickly."
+      },
+      {
+        "@type": "Review",
+        "itemReviewed": {
+          "@id": "https://iptvhubtv.com/#organization"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Elena P."
+        },
+        "reviewBody": "The channels stay reliable during live games and the premium experience feels polished from the first click. Everything just works."
       }
-    },
-  
- {
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "itemReviewed": {
-      "@type": "Organization",
-      "name": "IPTV Hub TV"
-    },
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "5"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "Maya R."
-    },
-    "reviewBody": "Excellent streaming quality and crisp visuals make every night feel premium. The setup was simple and the playback stays smooth."
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "itemReviewed": {
-      "@type": "Organization",
-      "name": "IPTV Hub TV"
-    },
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "5"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "Daniel K."
-    },
-    "reviewBody": "Easy installation and a clean interface made it one of the easiest subscriptions I have ever set up. The support team answered quickly."
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "itemReviewed": {
-      "@type": "Organization",
-      "name": "IPTV Hub TV"
-    },
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "5"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "Elena P."
-    },
-    "reviewBody": "The channels stay reliable during live games and the premium experience feels polished from the first click. Everything just works."
+    ]
   }
-  ]
   </script>
 </head>
 
 <body>
   <div class="page-shell">
     <aside class="sidebar">
-      <a class="brand" href="/">
+      <a class="brand" href="/"> 
         <img src="assets/img/logo.webp" alt="IPTV Hub TV Logo" width="100" height="100" />
       </a>
       <button class="mobile-toggle" aria-label="Toggle navigation" type="button">
