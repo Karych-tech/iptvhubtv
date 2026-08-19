@@ -12,6 +12,26 @@ document.addEventListener('DOMContentLoaded', () => {
       menuButton.classList.toggle('active');
       navLinks.classList.toggle('show');
     });
+
+    // Close menu when clicking outside of it on mobile
+    document.addEventListener('click', (event) => {
+      if (!navLinks.contains(event.target) && !menuButton.contains(event.target) && navLinks.classList.contains('show')) {
+        navLinks.classList.remove('show');
+        menuButton.classList.remove('active');
+      }
+    });
+
+    // Close menu on scroll
+    let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', () => {
+      if (navLinks.classList.contains('show')) {
+        if (window.scrollY > lastScrollY) { // Scrolling down
+          navLinks.classList.remove('show');
+          menuButton.classList.remove('active');
+        }
+      }
+      lastScrollY = window.scrollY;
+    });
   }
 
   faqItems.forEach((item) => {
